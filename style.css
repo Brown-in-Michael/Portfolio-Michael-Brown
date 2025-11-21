@@ -50,6 +50,10 @@ header{
     cursor: pointer;
     transition: 0.3s ease-in-out;
     margin: 10px;
+    img{
+        width: 50px;
+        height: 50px;
+    }
 }
 .logo:hover{
     transform: scale(1.1);
@@ -57,8 +61,8 @@ header{
 span{
     background: linear-gradient(
         270deg,
-        #5a189a 10%,
-        #10002b 100%
+        #5a189a 50%,
+        white 100%
     );
     background-clip: text;
     color: transparent;
@@ -82,11 +86,7 @@ nav a:hover{
     padding: 1rem 2rem;
     border-radius: 4rem;
     margin: 10px;
-    background: linear-gradient(
-        270deg,
-        #5a189a 10%,
-        #10002b 100%
-    );
+   background-color: #5a189a;
     color: var(--text-color);
     letter-spacing: 1px;
     cursor: pointer;
