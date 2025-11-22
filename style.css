@@ -247,3 +247,65 @@ section{
 .about-content .btn{
     margin: 3rem 0;
 }
+/* Services styles */
+.heading{
+     text-align: center;
+        font-size: 6rem;
+        margin: 5rem 0;
+}
+.services{
+    h2{
+        color: white;
+    }
+    background-color: #080808;
+    color: #080808;
+}
+.stubborn{
+    display: flex;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+.service-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 600px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+    margin: 15px;
+}
+.service-box:hover{
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform:scale(1.03);
+} 
+.service-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    h3{
+        font-size: 4rem;
+        font-weight: 800;
+        margin: 2rem 0;
+        
+    }
+    p{
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.7;
+    }
+    i{
+        font-size: 8rem;
+    }
+}
