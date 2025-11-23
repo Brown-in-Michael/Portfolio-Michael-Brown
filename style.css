@@ -18,7 +18,7 @@
     --bg-color: #080808;
     --second-bg-color: #101010;
     --text-color: white;
-    --main-color: #5a189a;
+    --main-color: #8338ec;
 }
 /* HTML settings */
 html{
@@ -67,7 +67,7 @@ header{
 span{
     background: linear-gradient(
         270deg,
-        #5a189a 50%,
+        #8338ec 50%,
         white 100%
     );
     background-clip: text;
@@ -92,7 +92,7 @@ nav a:hover{
     padding: 1rem 2rem;
     border-radius: 4rem;
     margin: 10px;
-   background-color: #5a189a;
+   background-color: #8338ec;
     color: var(--text-color);
     letter-spacing: 1px;
     cursor: pointer;
@@ -144,7 +144,6 @@ section{
     }
 }
 .home-img img:hover{
-    transform: scale(1.1);
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
@@ -200,10 +199,10 @@ section{
     background-color: var(--bg-color);
     box-shadow: 0 0 25px var(--main-color);
     border-radius: 3rem;
-    border-color: 3px solid #5a189a;
+    border-color: 3px solid #8338ec;
     font-size: 1.8rem;
     color: var(--main-color);
-    border: 2px solid #5a189a;
+    border: 2px solid #8338ec;
     font-weight: 600;
     transition: 0.3s ease-in-out;
 }
@@ -228,7 +227,6 @@ section{
     transition: 0.3s ease-in-out;
 }
 .about-img img:hover{
-    transform: scale(1.1);
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
@@ -237,6 +235,7 @@ section{
     h2{
         font-size: 6rem;
         text-align: left;
+        padding-bottom: 10px;
     }
     p{
         font-size: 15px;
@@ -308,4 +307,111 @@ section{
     i{
         font-size: 8rem;
     }
+}
+/* Cards aka Projects Styles */
+.projects{
+    background-color: var(--second-bg-color);
+    h2{
+        text-align: center;
+        padding-bottom: 50px;
+        font-size: 65px;
+    }
+}
+.project-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+    img{
+        width: 300px;
+        height: 160px;
+        border-radius: 2rem;
+    }
+}
+.project-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius:  3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: 0.3s ease;
+    h3{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+}
+.project-card:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    transform: scale(1.02);
+}
+/* Contact */
+.Contact{
+    background-color: var(--bg-color);
+    h2{
+        font-size: 65px;
+        margin-bottom: 3rem;
+        color: var(--text-color);
+        text-align: center;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        text-align: center;
+    }
+}
+.Contact form .input-box input,
+.Contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+/* Footer Styles */
+footer{
+    background-color: var(--second-bg-color);
+    padding: 50px 0;
+    ul{
+        text-align: center;
+        font-size: 1.8rem;
+       
+    }
+    li{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    a{
+        color: white;
+        border-bottom: 3px solid transparent;
+        transform: 0.3s ease-in-out;
+    }
+}
+footer ul li a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+footer .social-icons{
+    text-align: center;
+}
+footer .copyright{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
 }
