@@ -430,10 +430,54 @@ footer .copyright{
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
+        display: none;
         a{
             display: block;
             font-size: 2rem;
             margin: 3rem 0;
         }
     }
+     /* .navbar.active{
+        display: block;
+    }
+    .gradient-btn{
+        display: none;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+    .home-img{
+        img{
+            width:  32vw;
+        }
+    }
+    .stubborn{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 350px;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+        h2{
+            text-align: center;
+            margin: 2rem 0;
+        }
+        img{
+            width: 28vw;
+        }
+    }
+    .Contact{
+        form{
+            flex-direction: column;
+        }
+    }  */
 }
