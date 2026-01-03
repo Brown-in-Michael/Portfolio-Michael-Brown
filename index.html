@@ -23,7 +23,7 @@
             <a href="#home">Acceuil</a>
             <a href="#about">À Propos</a>
             <a href="#services">Skills</a>
-            <a href="#projects">Projets</a>
+            <a href="#projects">FAQs</a>
             <a href="#Contact">Contact</a>
         </nav>
         <!-- Contact me button -->
@@ -82,6 +82,7 @@
     </section>
     <!-- Services Section -->
     <section class="services" id="services">
+        <div class="bg-blur light-top"></div>
         <div class="container">
             <h2 class="heading">Compétences</h2>
             <div class="group">
@@ -89,7 +90,8 @@
                     <div class="titlePara">
                         <h3>Conception</h3>
                         <p>
-                            Je travaille très bien en équipe. Je contribue à l'équipe grâce à mes qualités personnelles et
+                            Je travaille très bien en équipe. Je contribue à l'équipe grâce à mes qualités personnelles
+                            et
                             aux compétences que j'ai acquises. J'aime résoudre les problèmes, ce qui est essentiel en
                             développement web.
                         </p>
@@ -120,20 +122,21 @@
                     <div class="titlePara">
                         <h3>Developement Front-End</h3>
                         <p>
-                            Je possède de solides bases en HTML et CSS. Mes connaissances en JavaScript sont correctes, sans être parfaites, mais je m'efforce d'en apprendre davantage et de m'améliorer.
+                            Je possède de solides bases en HTML et CSS. Mes connaissances en JavaScript sont correctes,
+                            sans être parfaites, mais je m'efforce d'en apprendre davantage et de m'améliorer.
                         </p>
                     </div>
                 </div>
                 <div class="skills">
                     <h3>Design Thinking</h3>
                     <div>
-                        <h4>Persona</h4>
+                        <h4>HTML & CSS</h4>
                         <img src="https://www.amplitudes.com/blog/wp-content/uploads/2017/04/PANO.jpg" alt="">
                         <p> lorem ifdnjifij uunnnn te diiid neptum</p>
                         <a href="" class="btn">Voir plus</a>
                     </div>
                     <div>
-                        <h4>Test Utilisateur</h4>
+                        <h4>JavaScript</h4>
                         <img src="https://www.amplitudes.com/blog/wp-content/uploads/2017/04/PANO.jpg" alt="">
                         <p> lorem ifdnjifij uunnnn te diiid neptum</p>
                         <a href="" class="btn">Voir plus</a>
@@ -152,7 +155,28 @@
     <section class="projects" id="projects">
         <div class="container">
             <h2>FAQs</h2>
-
+            <div class="faq">
+                <details>
+                    <summary>Qui suis-je et quel est mon parcours professionnel ?</summary>
+                    Quelque chose d'assez discret pour passer inaperçu.
+                </details>
+                <details>
+                    <summary>Est-ce que je travaille en freelance, en mission ou en contrat ?</summary>
+                    Quelque chose d'assez discret pour passer inaperçu.
+                </details>
+                <details>
+                    <summary>Quel s'ont les outils et technologies que j’utilise ?</summary>
+                    Quelque chose d'assez discret pour passer inaperçu.
+                </details>
+                <details>
+                    <summary>Comment me contacter pour un projet ou une collaboration ?</summary>
+                    Quelque chose d'assez discret pour passer inaperçu.
+                </details>
+                <details>
+                    <summary>Pourquoi travailler avec moi plutôt qu’un autre professionnel ?</summary>
+                    Quelque chose d'assez discret pour passer inaperçu.
+                </details>
+            </div>
             <!-- <div class="project-box">
                 <div class="project-card">
                     <img src="Assets/Project_1.png" alt="A web site of a festival">
@@ -226,32 +250,38 @@
                     <div class="btn">
                         Voir le projet
                     </div>
-                </div> --> 
-            </div>
+                </div> -->
+        </div>
         </div>
     </section>
     <!-- Contact Form -->
     <section class="Contact" id="Contact">
+        <div class="bg-blur white"></div>
+        <div class="bg-blur purple"></div>
+        <div class="bg-blur pink"></div>
         <div class="container">
             <h2>Contactez-Moi</h2>
-            <a href="mailto:votreadresse@mail.fr" class="btn"> contactez moi</a>
-
-            <form action="#">
-                <div class="input-group">
-                    <div class="input-box">
-                        <input type="text" placeholder="Nom Prénom">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="input-box">
-                        <input type="number" placeholder="Téléphone">
-                        <input type="text" placeholder="Sujet">
-                    </div>
+            <div class="contact-group">
+                <img src="Assets/image25.png" alt="">
+                <div class="formCard">
+                    <form action="https://formspree.io/f/mnjnzebb" method="POST">
+                        <div class="input-group">
+                            <div class="input-box">
+                                <input type="text" placeholder="Nom Prénom">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="input-box">
+                                <input type="number" placeholder="Téléphone">
+                                <input type="text" placeholder="Sujet">
+                            </div>
+                        </div>
+                        <div class="input-group-2">
+                            <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
+                            <input type="submit" value="Envoyer" class="btn">
+                        </div>
+                    </form>
                 </div>
-                <div class="input-group-2">
-                    <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Envoyer" class="btn">
-                </div>
-            </form>
+            </div>
         </div>
     </section>
     <section class="test">
@@ -275,7 +305,7 @@
         </div>
         <ul class="list">
             <li>
-                <a href="">FAQ</a>
+                <a href="">Acceuil</a>
             </li>
             <li>
                 <a href="#services">Skills</a>
@@ -284,7 +314,7 @@
                 <a href="#about">À propos</a>
             </li>
             <li>
-                <a href="#projects">Projets</a>
+                <a href="#projects">FAQ</a>
             </li>
 
             <li>
