@@ -36,9 +36,7 @@
                 <h1>
                     Salut, c'est <span>Michael</span>
                 </h1>
-                <p>Je m’appelle Michael Brown, j’ai 20 ans et je me consacre à devenir développeur full-stack. Bienvenu
-                    à
-                    mon site web :)</p>
+                <p>Je m’appelle Michael Brown, j’ai 20 ans et je me consacre à devenir développeur web. Bienvenue sur mon site web :)</p>
                 <a href="#about" class="btn">En savoir plus</a>
                 <!-- <div class="social-icons">
                     <a href="https://github.com/Brown-in-Michael" target="_blank">
@@ -267,19 +265,19 @@ Enfin, ma motivation, ma curiosité et ma capacité à progresser rapidement fon
             <div class="contact-group">
                 <img src="Assets/image25.png" alt="">
                 <div class="formCard">
-                    <form action="https://formspree.io/f/mnjnzebb" method="POST">
+                    <form method="POST" action="https://formspree.io/f/mnjnzebb">
                         <div class="input-group">
                             <div class="input-box">
-                                <input type="text" placeholder="Nom Prénom">
-                                <input type="email" placeholder="Email">
+                                <input type="text" name="name" placeholder="Nom Prénom" required>
+                                <input type="email" name="email" placeholder="Email" required>
                             </div>
                             <div class="input-box">
-                                <input type="number" placeholder="Téléphone">
-                                <input type="text" placeholder="Sujet">
+                                <input type="tel" name="phone" placeholder="Téléphone ( optionnel )">
+                                <input type="text" name="subject" placeholder="Sujet">
                             </div>
                         </div>
                         <div class="input-group-2">
-                            <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
+                            <textarea name="message" placeholder="Message" cols="30" rows="10" required></textarea>
                             <input type="submit" value="Envoyer" class="btn">
                         </div>
                     </form>
